@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'MesloLGMDZNerdFontMono';
+  src: url('/fonts/MesloLGMDZNerdFontMono-Regular.ttf') format('truetype'); /* Correct format */
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --font-meslo-mono: 'MesloLGMDZNerdFontMono';
+   /* Kanagawa Dark Theme */
+   --dark-theme-background: #181616; /* Deep indigo */
+   --dark-theme-color: #D3D3D3; /* Warm beige */
+   --dark-theme-border: #54546d; /* Smoky purple-grey */
+   --dark-theme-accent-primary: #957fb8; /* Subdued purple */
+   --dark-theme-accent-secondary: #7e9cd8; /* Gentle blue */
+   --dark-theme-highlight: #223249; /* Rose red */
+ }
+ html {
+  background-color: var(--dark-theme-background);
+  color: var(--dark-theme-color);
+  border: 1px solid var(--dark-theme-border);
+}
+body {
+  font-family: var(--font-meslo-mono), monospace;
+}
+
+
